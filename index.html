@@ -13,7 +13,6 @@
 </head>
 <body>
     <script>
-
         //task 1
         // const A = +prompt('Zəhmət olmasa A ədədini yazın');
         // const B = +prompt('Zəhmət olmasa B ədədini yazın');
@@ -30,20 +29,17 @@
         //task 1 with function
         // const A = +prompt('Zəhmət olmasa A ədədini yazın');
         // const B = +prompt('Zəhmət olmasa B ədədini yazın');
-        // function divisionOfElements(A,B){
-        //     return A/B;
-        // }
-        // function remainderOfElements(A,B){
-        //     return A%B;
-        // }
-        // if(B===0){
+        // let divideAndRemainder = (A,B) =>{
+        //     if(B===0){
         //     alert('We cant divide by zero');
         // } else{
-        //     let result = divisionOfElements(A,B);
+        //     let result = A/B;
         //     console.log(result);
-        //     let remainder = remainderOfElements(A,B);
+        //     let remainder = A%B;
         //     console.log(remainder);
         // }
+        // }
+        // divideAndRemainder(A,B);
 
 
         //task 2
@@ -59,14 +55,15 @@
         //task 2 with function
         // let A = +prompt('Zəhmət olmasa A ədədini yazın');
         // let B = +prompt('Zəhmət olmasa B ədədini yazın');
-        // let temp;
-        // function changeNumbers(A,B,temp){ 
+        // let changeNumbers = (A,B) =>{
+        //     let temp;
         //     temp=A;
         //     A=B;
-        //     B=temp;
-        //     console.log(`A:${A}, B:${B}`);
+        //     console.log(`A=${A}`);
+        //     B= temp;
+        //     console.log(`B=${B}`);
         // }
-        // changeNumbers(A,B,temp);
+        // changeNumbers(A,B);
 
         //task 3
         // const A = +prompt('Zəhmət olmasa A ədədini yazın');
@@ -83,16 +80,15 @@
         // const A = +prompt('Zəhmət olmasa A ədədini yazın');
         // const B = +prompt('Zəhmət olmasa B ədədini yazın');
         // const C = +prompt('Zəhmət olmasa C ədədini yazın');
-        // let X;
-        // function someMath(A,B,C){
-        //     return (C-B)/A;
-        // }
-        // if(A===0||B===0||C===0){
+        // let someEq = (A,B,C) => {
+        //     if(A===0||B===0||C===0){
         //     alert('You cant write zero');
-        // } else{
-        //     X= someMath(A,B,C);
-        //     console.log(`X:${X}`);
+        //     } else {
+        //         let X = (C-B)/A;
+        //         console.log(X);
+        //     }
         // }
+        // someEq(A,B,C);
         
         //task 4
         // const A = +prompt('Zəhmət olmasa A ədədini yazın');
@@ -105,74 +101,60 @@
         //     console.log(A*B);
         // }
 
-        //task 4 with function
-        // let A = +prompt('Zəhmət olmasa A ədədini yazın');
-        // let B = +prompt('Zəhmət olmasa B ədədini yazın');
-        // let result;
-        // function Addition(A,B){
-        //     return A+B;
+        // //task 4 with function
+        // const A = +prompt('Zəhmət olmasa A ədədini yazın');
+        // const B = +prompt('Zəhmət olmasa B ədədini yazın');
+        // let someOtherEq = (A,B) =>{
+        //     if(A>B){
+        //     console.log(A+B);
+        //     } else if(A<B){
+        //         console.log(A-B);
+        //     } else {
+        //         console.log(A*B);
+        //     }
         // }
-        // function Multiplication(A,B){
-        //     return A*B;
-        // }
-        // function Subtraction(A,B){
-        //     return A-B;
-        // }
-        // if(A>B){
-        //     result = Addition(A,B);
-        //     console.log(`result: ${result}`);
-        // } else if(A<B){
-        //     result = Subtraction(A,B);
-        //     console.log(`result: ${result}`);
-        // } else {
-        //     result = Multiplication(A,B);
-        //     console.log(`result: ${result}`);
-        // }
+        // someOtherEq(A,B);
 
+        
         //task 5
         // const A = +prompt('Zəhmət olmasa A ədədini yazın');
         // const B = +prompt('Zəhmət olmasa B ədədini yazın');
         // const C = +prompt('Zəhmət olmasa C ədədini yazın');
         // let D = B*B - 4*A*C;
         // console.log(D);
-        // let result1 = (-B + Math.sqrt(D))/2*A;
-        // let result2 = (-B - Math.sqrt(D))/2*A;
-        // console.log(result1);
-        // console.log(result2);
+        // if(D<0){
+        //     alert("the equation has no real roots.")
+        // } else {
+        //     result1= (-B + Math.sqrt(D))/2*A;
+        //     result2= (-B - Math.sqrt(D))/2*A;
+        //     console.log(result1);
+        //     console.log(result2);
+        // }
 
         //task 5 with function
         // const A = +prompt('Zəhmət olmasa A ədədini yazın');
         // const B = +prompt('Zəhmət olmasa B ədədini yazın');
         // const C = +prompt('Zəhmət olmasa C ədədini yazın');
-        // let D,result1,result2,i;
-        // function Discriminant(A,B,C){
-        //    return B*B - 4*A*C;
+        // let findingRoots = (A,B,C) =>{
+        //         let D = B*B - 4*A*C;
+        //         console.log(D);
+        //     if(D<0){
+        //         alert("the equation has no real roots.")
+        //     } else {
+        //         result1= (-B + Math.sqrt(D))/2*A;
+        //         result2= (-B - Math.sqrt(D))/2*A;
+        //         console.log(result1);
+        //         console.log(result2);
+        //     }
         // }
-        // function rootsMath1(A,B,D){
-        //     return (-B + Math.sqrt(D))/2*A;
-        // }
-        // function rootsMath2(A,B,D){
-        //     return (-B - Math.sqrt(D))/2*A;
-        // }
-        // D= Discriminant(A,B,C);
-        // console.log(`Discriminant: ${D}`);
-        
-        // if(D<0){
-        //     alert("the equation has no real roots.")
-        // } else {
-        //     result1= rootsMath1(A,B,D);
-        //     result2= rootsMath2(A,B,D);
-        //     console.log(result1);
-        //     console.log(result2);
-        // }
+        // findingRoots(A,B,C);
 
 
         //task 6
         //dersde yazdıq
-        //functionla nece yazariq bilmirem
         
 
-        //task 7
+        // task 7
         // const x = +prompt('Zəhmət olmasa x ədədini yazın');
         // const y = +prompt('Zəhmət olmasa y ədədini yazın');
         // const r = +prompt('Zəhmət olmasa r ədədini yazın');
@@ -184,25 +166,20 @@
         //     console.log('(x,y) çevrənin daxilində deyil')
         // }
 
-        //task 7 with functions
+        // //task 7 with function
         // const x = +prompt('Zəhmət olmasa x ədədini yazın');
         // const y = +prompt('Zəhmət olmasa y ədədini yazın');
         // const r = +prompt('Zəhmət olmasa r ədədini yazın');
-        // let radius,formula;
-        // function mathOfRadius(r){
-        //     return r*r;
+        // let checkingRadiusAndFormula = (x,y,r) =>{
+        //     let radius=r*r;
+        //     let formula= Math.sqrt((x*x)+(y*y));
+        //     if(radius=formula){
+        //         console.log('(x,y) çevrənin daxilindədi')
+        //     } else {
+        //         console.log('(x,y) çevrənin daxilində deyil')
+        //     }
         // }
-        // function mathOfFormula(x,y){
-        //     return Math.sqrt((x*x)+(y*y));
-        // }
-        // radius=mathOfRadius(r);
-        // formula= mathOfFormula(x,y);
-        // if(radius=formula){
-        //     console.log('(x,y) çevrənin daxilindədi')
-        // } else {
-        //     console.log('(x,y) çevrənin daxilində deyil')
-        // }
-
+        // checkingRadiusAndFormula(x,y,r);
     </script>
 </body>
 </html>
